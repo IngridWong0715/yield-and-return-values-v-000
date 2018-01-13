@@ -4,7 +4,7 @@ def hello(array)
   i = 0
   while i < array.length
     collection = []
-    collection.push(yield(array[i]))
+    collection << yield(array[i])
     i += 1
   end
   binding.pry
